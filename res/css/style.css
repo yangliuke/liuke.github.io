@@ -34,23 +34,23 @@ body {
     }
 }
 a:link {
-    color: #1434A4;
+    color: #0864c7;
 }
 a:visited {
-    color: #000080;
+    color: #0864c7;
 }
 a:hover {
-    color: #000080;
+    color: #000050;
 }
 a:active {
-    color: #000080;
+    color: #000050;
 }
 ::selection {
-    background: #ff8000;
+    background: #36f8a3;
     /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-    background: #ff8000;
+    background: #36f8a3;
     /* Gecko Browsers */
 }
 #article-expand {
