@@ -33,18 +33,7 @@ body {
         background-color: #fff;
     }
 }
-a:link {
-    color: #0864c7;
-}
-a:visited {
-    color: #0864c7;
-}
-a:hover {
-    color: #000050;
-}
-a:active {
-    color: #000050;
-}
+
 ::selection {
     background: #36f8a3;
     /* WebKit/Blink Browsers */
