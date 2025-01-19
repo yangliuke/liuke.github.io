@@ -6,10 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Personal website of Liuke Yang - Welcome to my corner of the web">
   <title>Liuke Yang</title>
-  <link href="style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Inline critical CSS -->
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    .content {
+      margin: 60px 20px 20px 100px;
+      width: 90%;
+      max-width: 500px;
+    }
+    .title {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000000;
+    }
+    @media (max-width: 767px) {
+      .content {
+        margin: 30px 10px 10px 10px;
+      }
+    }
+  </style>
+
+  <!-- Preload font with high fetchpriority -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Non-critical CSS -->
+  <link href="style.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="style.css" rel="stylesheet">
+  </noscript>
 </head>
 
 <body>
